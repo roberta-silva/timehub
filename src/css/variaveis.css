@@ -1,0 +1,32 @@
+:root {
+  /* cores */
+  /* superfícies */
+  --cor-fundo: #000;
+  --cor-superficie-primaria: #141414;
+  --cor-superficie-secundaria: #272727;
+  --cor-borda-padrao: #262626;
+
+  /* texto */
+  --cor-texto-primario: #ffffff;
+  --cor-texto-secundario: #b7b7b7;
+  --cor-texto-suave: #7c7c7c;
+
+  /* estados */
+  --cor-foco: #6b6b6b;
+
+  /* tipografia */
+  /* famílias tipográficas */
+  --fonte-primaria: "Poppins", sans-serif;
+  --fonte-secundaria: "Oxanium", sans-serif;
+
+  /* pesos */
+  --fonte-peso-regular: 400;
+  --fonte-peso-medio: 500;
+
+  /* tamanhos */
+  --fonte-sm: 0.875rem;
+  --fonte-md: 1rem;
+  --fonte-lg: 2rem;
+  --fonte-xl: 3rem;
+  --fonte-xxl: 12rem;
+}

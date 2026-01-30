@@ -2,7 +2,7 @@
   width: 300px;
 }
 .ferramenta__titulo {
-  font-size: 1rem;
+  font-size: var(--fonte-md);
   margin-bottom: 4px;
 }
 .ferramenta {
@@ -10,21 +10,21 @@
   min-width: 270px;
 }
 .home__input {
-  background: #272727;
+  background: var(--cor-superficie-secundaria);
   border: none;
   border-radius: 8px;
   padding: 4px 8px;
-  color: #7c7c7c;
+  color: var(--cor-texto-suave);
 }
 .home__label {
-  font-family: "Poppins";
-  font-size: 1rem;
-  color: #b7b7b7;
+  font-family: var(--fonte-primaria);
+  font-size: var(--fonte-md);
+  color: var(--cor-texto-secundario);
 }
 .home__bloco {
   display: flex;
   flex-direction: column;
-  background: #141414;
+  background: var(--cor-superficie-primaria);
   border-radius: 8px;
   padding: 20px;
   min-height: 290px;
@@ -32,7 +32,7 @@
   position: relative;
 }
 .home__bloco:hover {
-  border: 2px solid #262626;
+  border: 2px solid var(--cor-borda-padrao);
 }
 .abrir-pagina {
   position: absolute;
@@ -40,7 +40,7 @@
   right: 1rem;
   display: flex;
   padding: 4px;
-  background: #272727;
+  background: var(--cor-superficie-secundaria);
   border-radius: 50%;
 }
 
@@ -50,10 +50,10 @@
 }
 .temporizador__tempo {
   align-self: center;
-  font-family: "Oxanium";
-  font-size: 3rem;
-  font-weight: 500;
-  color: #fff;
+  font-family: var(--fonte-secundaria);
+  font-size: var(--fonte-xl);
+  font-weight: var(--fonte-peso-medio);
+  color: var(--cor-texto-primario);
 }
 
 /* horario atual */
@@ -62,15 +62,15 @@
   justify-content: center;
 }
 .horario-atual__hora {
-  font-family: "Oxanium";
-  font-size: 3rem;
-  font-weight: 500;
-  color: #fff;
+  font-family: var(--fonte-secundaria);
+  font-size: var(--fonte-xl);
+  font-weight: var(--fonte-peso-medio);
+  color: var(--cor-texto-primario);
 }
 .horario-atual__local {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  color: #b7b7b7;
+  font-family: var(--fonte-primaria);
+  font-size: var(--fonte-md);
+  color: var(--cor-texto-secundario);
 }
 
 /* cronometro */
@@ -79,17 +79,17 @@
   justify-content: center;
 }
 .cronometro__tempo {
-  font-family: "Oxanium";
-  font-size: 3rem;
-  font-weight: 500;
-  color: #fff;
+  font-family: var(--fonte-secundaria);
+  font-size: var(--fonte-xl);
+  font-weight: var(--fonte-peso-medio);
+  color: var(--cor-texto-primario);
 }
 .cronometro__opcoes button {
   border: none;
   border-radius: 8px;
   padding: 4px 8px;
   background: #272727;
-  color: #7c7c7c;
+  color: var(--cor-texto-suave);
 }
 
 /* calculadora de idade */
@@ -97,16 +97,16 @@
   margin-bottom: 12px;
 }
 .calculadora-idade__texto {
-  font-family: "Poppins";
-  font-size: 2rem;
-  font-weight: 400;
-  color: #b7b7b7;
+  font-family: var(--fonte-primaria);
+  font-size: var(--fonte-lg);
+  font-weight: var(--fonte-peso-regular);
+  color: var(--cor-texto-secundario);
 }
 .calculadora-idade__texto--result {
-  font-family: "Oxanium";
-  font-size: 2rem;
-  font-weight: 500;
-  color: #fff;
+  font-family: var(--fonte-secundaria);
+  font-size: var(--fonte-lg);
+  font-weight: var(--fonte-peso-medio);
+  color: var(--cor-texto-primario);
 }
 
 /* conversor de tempo */
@@ -129,14 +129,14 @@
   margin-bottom: 8px;
 }
 .calculo-datas__dias {
-  font-family: "Poppins";
-  color: #b7b7b7;
-  font-size: 2rem;
+  font-family: var(--fonte-primaria);
+  color: var(--cor-texto-secundario);
+  font-size: var(--fonte-lg);
   align-self: center;
 }
 .calculo-datas__dias-resultado {
-  font-family: "Oxanium";
-  font-size: 2rem;
-  font-weight: 500;
-  color: #fff;
+  font-family: var(--fonte-secundaria);
+  font-size: var(--fonte-lg);
+  font-weight: var(--fonte-peso-medio);
+  color: var(--cor-texto-primario);
 }

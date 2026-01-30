@@ -1,7 +1,6 @@
-@import url("./utilitarios.css");
+@import url("./variaveis.css");
 @import url("./global.css");
 @import url("./home.css");
-@import url("./global.css");
 
 /* paginas */
 @import url("./temporizador.css");

@@ -7,17 +7,17 @@ a {
   text-decoration: none;
 }
 body {
-  background: #000;
+  background: var(--cor-fundo);
 }
 h1,
 h2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  color: #fff;
+  font-family: var(--fonte-primaria);
+  font-weight: var(--fonte-peso-regular);
+  color: var(--cor-texto-primario);
 }
 input:focus,
 button:focus {
-  outline: 2px solid #6b6b6b;
+  outline: 2px solid var(--cor-foco);
 }
 /* ocultar itens */
 .sr-only {
@@ -45,17 +45,15 @@ button:focus {
 
 /* footer */
 .footer {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.875rem;
-  color: #b7b7b7;
+  font-family: var(--fonte-primaria);
+  font-size: var(--fonte-sm);
+  color: var(--cor-texto-secundario);
   padding: 60px 0px;
   text-align: center;
 }
 .footer a {
-  color: #b7b7b7;
+  color: var(--cor-texto-secundario);
   display: inline-flex;
   align-items: center;
   gap: 4px;
 }
-
-
