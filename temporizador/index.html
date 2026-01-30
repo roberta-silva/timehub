@@ -6,10 +6,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Use o temporizador online do TimeHub para criar contagens regressivas com data e hora exatas, direto no navegador.">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500&family=Poppins&display=swap" rel="stylesheet">
+
+
+  <link rel="preload" href="../src/css/style.css" as="style">
+  <link rel="stylesheet" href="../src/css/style.css">
   <title>Temporizador Online com data e hora| TimeHub</title>
 </head>
 
-<body>
+<body id="temporizador">
+  <header>
+    <img src="../src/img/marca.svg" alt="timehub">
+    <nav aria-label="Ações do temporizador">
+      <ul>
+        <li>
+          <a href="../index.html" aria-label="Ir para página inicial">
+            <img src="../src/img/menu.svg" alt="">
+          </a>
+        </li>
+
+        <li>
+          <button id="btn-editar" aria-label="Editar temporizador">
+            <img src="../src/img/editar.svg" alt="">
+          </button>
+        </li>
+
+        <li>
+          <button id="btn-expandir" aria-label="Expandir tela">
+            <img src="../src/img/expandir.svg" alt="">
+          </button>
+        </li>
+
+        <li>
+          <button id="btn-tema" aria-label="Alterar tema">
+            <img src="../src/img/theme.svg" alt="">
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+  <nav class="sidenav">
+    <ul>
+      <li><a href="../temporizador/index.html"><img src="../src/img/temporizador.svg" alt="">temporizador</a></li>
+      <li><a href="../horario-atual/index.html"><img src="../src/img/horario-atual.svg" alt="">horário atual</a></li>
+      <li><a href="../cronometro/index.html"><img src="../src/img/cronometro.svg" alt="">cronometro</a></li>
+      <li><a href="../calculadora-idade/index.html"><img src="../src/img/idade.svg" alt="">calculadora de idade</a></li>
+      <li><a href="../conversor-tempo/index.html"><img src="../src/img/conversor.svg" alt="">conversor</a></li>
+      <li><a href="../calculo-datas/index.html"><img src="../src/img/calculo-datas.svg" alt="">cálculo entre datas</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 contenteditable="true" aria-label="Editar nome do temporizador" spellcheck="false">temporizador</h1>
+    <output class="font-1-l">00:00:00</output>
+    <div>
+      <label for="temporizador-data" class="sr-only">selecionar data final do temporizador</label>
+      <input type="datetime-local" name="temporizador-data" id="temporizador-data" aria-describedby="data-por-extenso">
+      <p id="data-por-extenso" class="font-2-s"></p>
+    </div>
+  </main>
+
+  <dialog id="modal-edicao">
+    <form method="dialog" class="modal-edicao">
+      <h2>Editar temporizador</h2>
+
+      <div class="campo">
+        <label for="editar-titulo">Título</label>
+        <input type="text" id="editar-titulo" placeholder="Nome do temporizador">
+      </div>
+
+      <div class="campo">
+        <label for="editar-data">Data final</label>
+        <input type="datetime-local" id="editar-data">
+      </div>
+
+      <menu>
+        <button value="cancel">Cancelar</button>
+        <button id="salvar-edicao" value="default">Salvar</button>
+      </menu>
+    </form>
+  </dialog>
+
 
 </body>
 

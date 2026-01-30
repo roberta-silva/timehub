@@ -1,0 +1,142 @@
+.header__img {
+  width: 300px;
+}
+.ferramenta__titulo {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+.ferramenta {
+  flex: 1 1 calc(33.333% - 27px);
+  min-width: 270px;
+}
+.home__input {
+  background: #272727;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 8px;
+  color: #7c7c7c;
+}
+.home__label {
+  font-family: "Poppins";
+  font-size: 1rem;
+  color: #b7b7b7;
+}
+.home__bloco {
+  display: flex;
+  flex-direction: column;
+  background: #141414;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 290px;
+  border: 2px solid transparent;
+  position: relative;
+}
+.home__bloco:hover {
+  border: 2px solid #262626;
+}
+.abrir-pagina {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  padding: 4px;
+  background: #272727;
+  border-radius: 50%;
+}
+
+/* temporizador */
+.temporizador__formulario {
+  margin-bottom: 55px;
+}
+.temporizador__tempo {
+  align-self: center;
+  font-family: "Oxanium";
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* horario atual */
+.horario-atual__conteudo {
+  align-items: center;
+  justify-content: center;
+}
+.horario-atual__hora {
+  font-family: "Oxanium";
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
+}
+.horario-atual__local {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #b7b7b7;
+}
+
+/* cronometro */
+.cronometro__conteudo {
+  align-items: center;
+  justify-content: center;
+}
+.cronometro__tempo {
+  font-family: "Oxanium";
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
+}
+.cronometro__opcoes button {
+  border: none;
+  border-radius: 8px;
+  padding: 4px 8px;
+  background: #272727;
+  color: #7c7c7c;
+}
+
+/* calculadora de idade */
+.calculadora-idade__input {
+  margin-bottom: 12px;
+}
+.calculadora-idade__texto {
+  font-family: "Poppins";
+  font-size: 2rem;
+  font-weight: 400;
+  color: #b7b7b7;
+}
+.calculadora-idade__texto--result {
+  font-family: "Oxanium";
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* conversor de tempo */
+.conversor-tempo__opcoes {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 6px;
+}
+.conversor-tempo__conteudo input {
+  max-width: 10ch;
+}
+
+/* calculo entre datas */
+.calculo-datas__inputs {
+  margin-bottom: 40px;
+}
+.calculo-datas__opcoes {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 8px;
+}
+.calculo-datas__dias {
+  font-family: "Poppins";
+  color: #b7b7b7;
+  font-size: 2rem;
+  align-self: center;
+}
+.calculo-datas__dias-resultado {
+  font-family: "Oxanium";
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+}
