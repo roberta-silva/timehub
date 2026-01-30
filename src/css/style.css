@@ -36,6 +36,13 @@ h2 {
   font-size: 1rem;
   margin-bottom: 4px;
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
 section {
   flex: 1 1 calc(33.333% - 27px);
   min-width: 270px;
@@ -128,7 +135,7 @@ label {
 }
 
 /* calculadora de idade */
-.calculadora-idade__form {
+.calculadora-idade__input {
   margin-bottom: 12px;
 }
 .calculadora-idade__texto {
@@ -155,7 +162,7 @@ label {
 }
 
 /* calculo entre datas */
-.calculo-datas__conteudo form {
+.calculo-datas__inputs {
   margin-bottom: 40px;
 }
 .calculo-datas__opcoes {

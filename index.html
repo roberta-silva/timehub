@@ -22,15 +22,18 @@
   </header>
 
   <main>
+    <h2 class="sr-only">Ferramentas de tempo e datas</h2>
     <div class="container">
       <section class="temporizador">
         <h2 class="temporizador__titulo">temporizador</h2>
         <div class="temporizador__conteudo bloco">
-          <form class="temporizador__formulario">
+          <div class="temporizador__formulario">
+            <label for="temporizador-data" class="sr-only">data do temporizador</label>
             <input type="date" name="temporizador-data" id="temporizador-data">
+            <label for="temporizador-hora" class="sr-only">hora do temporizador</label>
             <input type="time" name="temporizador-hora" id="temporizador-hora">
-          </form>
-          <span class="temporizador__tempo">00:00:00</span>
+          </div>
+          <output class="temporizador__tempo">00:00:00</output>
           <a href="./temporizador/index.html" class="temporizador__link abrir-pagina" aria-label="Abrir temporizador">
             <img src="./src/img/expandir.svg" alt="Abrir temporizador">
           </a>
@@ -40,7 +43,7 @@
       <section class="horario-atual">
         <h2 class="horario-atual__titulo">horário atual</h2>
         <div class="horario-atual__conteudo bloco">
-          <span class="horario-atual__hora">00:00:00</span>
+          <time class="horario-atual__hora">00:00:00</time>
           <span class="horario-atual__local">horário de Brasília (UTC-3)</span>
           <a href="./horario-atual/index.html" class="horario-atual__link abrir-pagina" aria-label="Abrir horario atual">
             <img src="./src/img/expandir.svg" alt="Abrir horário atual">
@@ -51,10 +54,11 @@
       <section class="cronometro">
         <h2 class="cronometro__titulo">cronômetro</h2>
         <div class="cronometro__conteudo bloco">
-          <span class="cronometro__tempo">00:00:00</span>
+          <output class="cronometro__tempo">00:00:00</output>
           <div class="cronometro__opcoes">
-            <button type="button">reiniciar</button>
+            <button type="button">iniciar</button>
             <button type="button">parar</button>
+            <button type="button">reiniciar</button>
           </div>
           <a href="./cronometro/index.html" class="cronometro__link abrir-pagina" aria-label="Abrir cronometro">
             <img src="./src/img/expandir.svg" alt="Abrir cronômetro">
@@ -65,81 +69,77 @@
       <section class="calculadora-idade">
         <h2 class="calculadora-idade__titulo">calculadora de idade</h2>
         <div class="calculadora-idade__conteudo bloco">
-          <form class="calculadora-idade__form">
+          <div class="calculadora-idade__input">
+            <label for="calculadora-idade" class="sr-only">Data de nascimento</label>
             <input type="date" name="calculadora-idade" id="calculadora-idade">
-          </form>
-          <span class="calculadora-idade__texto"><span class="calculadora-idade__anos-resultado calculadora-idade__texto--result">00</span> anos</span>
-          <span class="calculadora-idade__texto"><span class="calculadora-idade__meses-resultado calculadora-idade__texto--result">00</span> meses</span>
-          <span class="calculadora-idade__texto"><span class="calculadora-idade__dias-resultado calculadora-idade__texto--result">00</span> dias</span>
+          </div>
+          <span class="calculadora-idade__texto"><output class="calculadora-idade__anos-resultado calculadora-idade__texto--result">00</output> anos</span>
+          <span class="calculadora-idade__texto"><output class="calculadora-idade__meses-resultado calculadora-idade__texto--result">00</output> meses</span>
+          <span class="calculadora-idade__texto"><output class="calculadora-idade__dias-resultado calculadora-idade__texto--result">00</output> dias</span>
           <a href="./calculadora-idade/index.html" class="calculadora-idade__link abrir-pagina" aria-label="Abrir calculadora de idade">
             <img src="./src/img/expandir.svg" alt="Abrir calculadora de idade">
           </a>
-
         </div>
       </section>
 
       <section class="conversor-tempo">
         <h2 class="conversor-tempo__titulo">conversor de tempo</h2>
         <div class="conversor-tempo__conteudo bloco">
-          <form>
+          <div class="conversor-tempo__inputs">
             <div class="conversor-tempo__opcoes">
               <label for="anos">anos</label>
-              <input type="number" name="anos" id="anos">
+              <input type="number" name="anos" id="conversor-anos" min="0">
             </div>
             <div class="conversor-tempo__opcoes">
               <label for="meses">meses</label>
-              <input type="number" name="meses" id="meses">
+              <input type="number" name="meses" id="conversor-meses" min="0">
             </div>
             <div class="conversor-tempo__opcoes">
               <label for="semanas">semanas</label>
-              <input type="number" name="semanas" id="semanas">
+              <input type="number" name="semanas" id="conversor-semanas" min="0">
             </div>
             <div class="conversor-tempo__opcoes">
               <label for="dias">dias</label>
-              <input type="number" name="dias" id="dias">
+              <input type="number" name="dias" id="conversor-dias" min="0">
             </div>
             <div class="conversor-tempo__opcoes">
               <label for="horas">horas</label>
-              <input type="number" name="horas" id="horas">
+              <input type="number" name="horas" id="conversor-horas" min="0">
             </div>
             <div class="conversor-tempo__opcoes">
               <label for="minutos">minutos</label>
-              <input type="number" name="minutos" id="minutos">
+              <input type="number" name="minutos" id="conversor-minutos" min="0">
             </div>
             <div class="conversor-tempo__opcoes">
               <label for="segundos">segundos</label>
-              <input type="number" name="segundos" id="segundos">
+              <input type="number" name="segundos" id="conversor-segundos" min="0">
             </div>
-          </form>
-
+          </div>
           <a href="./conversor-tempo/index.html" class="conversor-tempo__link abrir-pagina" aria-label="Abrir conversor de tempo">
             <img src="./src/img/expandir.svg" alt="Abrir conversor de tempo">
           </a>
-
         </div>
       </section>
 
       <section class="calculo-datas">
-        <h2 class="calculo-datas__titulo">calculo entre datas</h2>
+        <h2 class="calculo-datas__titulo">cálculo entre datas</h2>
         <div class="calculo-datas__conteudo bloco">
-          <form>
+          <div class="calculo-datas__inputs">
             <div class="calculo-datas__opcoes">
               <label for="inicial">data inicial</label>
-              <input type="date" name="inicial" id="inicial">
+              <input type="date" name="inicial" id="calculo-datas-inicial">
             </div>
             <div class="calculo-datas__opcoes">
               <label for="final">data final</label>
-              <input type="date" name="final" id="final">
+              <input type="date" name="final" id="calculo-datas-final">
             </div>
-          </form>
-
+          </div>
           <span class="calculo-datas__dias">
-            <span class="calculo-datas__dias-resultado">66</span> dias
+            <output class="calculo-datas__dias-resultado">66</output> dias
           </span>
           <a href="./calculo-datas/index.html" class="calculo-datas__link abrir-pagina" aria-label="Abrir calculo de datas">
-            <img src="./src/img/expandir.svg" alt="Abrir calculo entre datas">
+            <img src="./src/img/expandir.svg" alt="Abrir cálculo entre datas">
           </a>
-
         </div>
       </section>
     </div>
