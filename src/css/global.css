@@ -6,6 +6,9 @@
 a {
   text-decoration: none;
 }
+ul {
+  list-style: none;
+}
 body {
   background: var(--cor-fundo);
 }
@@ -27,13 +30,13 @@ button:focus {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
 }
-.header,
+.header-home,
 .container,
 .footer {
   max-width: 1400px;
   margin: 0 auto;
 }
-.header,
+.header-home,
 .container {
   padding: 40px 40px 0px 40px;
 }
