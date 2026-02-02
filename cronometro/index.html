@@ -6,11 +6,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Cronômetro online do Timehub para medir o tempo com precisão, com controles simples para iniciar, pausar e reiniciar.">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500&family=Poppins&display=swap" rel="stylesheet">
+
+
+  <link rel="preload" href="../src/css/style.css" as="style">
+  <link rel="stylesheet" href="../src/css/style.css">
+  <link rel="shortcut icon" href="../favicon.svg" type="image/x-icon">
   <title>Cronômetro online simples e preciso | TimeHub</title>
 </head>
 
-<body>
+<body id="temporizador">
+  <div class="estrutura">
+    <header class="header">
+      <div class="header__img">
+        <img src="../src/img/marca.svg" alt="timehub">
+      </div>
+      <nav class="header__acoes" aria-label="Ações do temporizador">
+        <ul class="header__lista">
+          <li class="header__acao">
+            <a href="../index.html" aria-label="Ir para página inicial">
+              <img src="../src/img/menu.svg" alt="">
+            </a>
+          </li>
 
+          <li class="header__acao">
+            <button class="header__btn" id="btn-editar" aria-label="Editar temporizador">
+              <img src="../src/img/editar.svg" alt="">
+            </button>
+          </li>
+
+          <li class="header__acao">
+            <button class="header__btn" id="btn-expandir" aria-label="Expandir tela">
+              <img src="../src/img/expandir.svg" alt="">
+            </button>
+          </li class="header__acao">
+
+          <li class="header__acao">
+            <button class="header__btn" id="btn-tema" aria-label="Alterar tema">
+              <img src="../src/img/theme.svg" alt="">
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <nav class="sidenav">
+      <ul class="sidenav__lista">
+        <li class="sidenav__item">
+          <a href="../temporizador/index.html">
+            <img src="../src/img/temporizador.svg" alt="">temporizador</a>
+        </li>
+
+
+        <li class="sidenav__item"><a href="../horario-atual/index.html"><img src="../src/img/horario-atual.svg" alt="">horário atual</a></li>
+        <li class="sidenav__item"><a href="../cronometro/index.html"><img src="../src/img/cronometro.svg" alt="">cronometro</a></li>
+        <li class="sidenav__item"><a href="../calculadora-idade/index.html"><img src="../src/img/idade.svg" alt="">calculadora de idade</a></li>
+        <li class="sidenav__item"><a href="../conversor-tempo/index.html"><img src="../src/img/conversor.svg" alt="">conversor</a></li>
+        <li class="sidenav__item"><a href="../calculo-datas/index.html"><img src="../src/img/calculo-datas.svg" alt="">cálculo entre datas</a></li>
+      </ul>
+    </nav>
+
+    <main class="conteudo">
+      <h1 class="cronometro u-titulo-pagina">cronômetro</h1>
+          <output class="cronometro__tempo">00:00:00</output>
+          <div class="cronometro__opcoes">
+            <button type="button">iniciar</button>
+            <button type="button">parar</button>
+            <button type="button">reiniciar</button>
+          </div>
+    </main>
+  </div>
 </body>
 
 </html>
