@@ -6,12 +6,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Converta unidades de tempo como anos, meses, semanas, dias, horas, minutos e segundos com o conversor do Timehub.">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500&family=Poppins&display=swap" rel="stylesheet">
+
+
+  <link rel="preload" href="../src/css/style.css" as="style">
+  <link rel="stylesheet" href="../src/css/style.css">
+  <link rel="shortcut icon" href="../favicon.svg" type="image/x-icon">
   <title>Conversor de tempo: anos, dias e horas | Timehub</title>
 
 </head>
 
-<body>
+<body id="conversor-tempo">
+  <div class="estrutura">
+    <header class="header">
+      <div class="header__img">
+        <img src="../src/img/marca.svg" alt="timehub">
+      </div>
+      <nav class="header__acoes" aria-label="Ações do temporizador">
+        <ul class="header__lista">
+          <li class="header__acao">
+            <a href="../index.html" aria-label="Ir para página inicial">
+              <img src="../src/img/menu.svg" alt="">
+            </a>
+          </li>
 
+          <li class="header__acao">
+            <button class="header__btn" id="btn-editar" aria-label="Editar temporizador">
+              <img src="../src/img/editar.svg" alt="">
+            </button>
+          </li>
+
+          <li class="header__acao">
+            <button class="header__btn" id="btn-expandir" aria-label="Expandir tela">
+              <img src="../src/img/expandir.svg" alt="">
+            </button>
+          </li class="header__acao">
+
+          <li class="header__acao">
+            <button class="header__btn" id="btn-tema" aria-label="Alterar tema">
+              <img src="../src/img/theme.svg" alt="">
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <nav class="sidenav">
+      <ul class="sidenav__lista">
+        <li class="sidenav__item">
+          <a href="../temporizador/index.html">
+            <img src="../src/img/temporizador.svg" alt="">temporizador</a>
+        </li>
+
+
+        <li class="sidenav__item"><a href="../horario-atual/index.html"><img src="../src/img/horario-atual.svg" alt="">horário atual</a></li>
+        <li class="sidenav__item"><a href="../cronometro/index.html"><img src="../src/img/cronometro.svg" alt="">cronometro</a></li>
+        <li class="sidenav__item"><a href="../calculadora-idade/index.html"><img src="../src/img/idade.svg" alt="">calculadora de idade</a></li>
+        <li class="sidenav__item"><a href="../conversor-tempo/index.html"><img src="../src/img/conversor.svg" alt="">conversor</a></li>
+        <li class="sidenav__item"><a href="../calculo-datas/index.html"><img src="../src/img/calculo-datas.svg" alt="">cálculo entre datas</a></li>
+      </ul>
+    </nav>
+
+    <main class="conversor-tempo conteudo">
+      <h1 class="u-titulo-pagina">conversor de tempo</h1>
+
+      <div class="conversor-tempo__inputs">
+        <div class="conversor-tempo__opcoes">
+          <input class="conversor-tempo__resultado" type="number" name="conversor-anos" id="conversor-anos" min="0">
+          <label class="conversor-tempo__rotulo" for="conversor-anos">anos</label>
+        </div>
+
+        <div class="conversor-tempo__opcoes">
+          <input class="conversor-tempo__resultado" type="number" name="conversor-meses" id="conversor-meses" min="0">
+          <label class="conversor-tempo__rotulo for=" conversor-meses">meses</label>
+        </div>
+
+        <div class="conversor-tempo__opcoes">
+          <input class="conversor-tempo__resultado" type="number" name="conversor-semanas" id="conversor-semanas" min="0">
+          <label class="conversor-tempo__rotulo for=" conversor-semanas">semanas</label>
+        </div>
+
+        <div class="conversor-tempo__opcoes">
+          <input class="conversor-tempo__resultado" type="number" name="conversor-dias" id="conversor-dias" min="0">
+          <label class="conversor-tempo__rotulo for=" conversor-dias">dias</label>
+        </div>
+
+        <div class="conversor-tempo__opcoes">
+          <input class="conversor-tempo__resultado" type="number" name="conversor-horas" id="conversor-horas" min="0">
+          <label class="conversor-tempo__rotulo for=" conversor-horas">horas</label>
+        </div>
+
+        <div class="conversor-tempo__opcoes">
+          <input class="conversor-tempo__resultado" type="number" name="conversor-minutos" id="conversor-minutos" min="0">
+          <label class="conversor-tempo__rotulo for=" conversor-minutos">minutos</label>
+        </div>
+
+        <div class="conversor-tempo__opcoes">
+          <input class="conversor-tempo__resultado" type="number" name="conversor-segundos" id="conversor-segundos" min="0">
+          <label class="conversor-tempo__rotulo for=" conversor-segundos">segundos</label>
+        </div>
+
+    </main>
+  </div>
 </body>
 
 </html>
