@@ -39,12 +39,6 @@
           </li>
 
           <li class="header__acao">
-            <button class="header__btn" id="btn-expandir" aria-label="Expandir tela">
-              <img src="../src/img/expandir.svg" alt="">
-            </button>
-          </li class="header__acao">
-
-          <li class="header__acao">
             <button class="header__btn" id="btn-tema" aria-label="Alterar tema">
               <img src="../src/img/theme.svg" alt="">
             </button>
@@ -70,7 +64,7 @@
       </ul>
     </nav>
 
-    <main class="conversor-tempo conteudo">
+    <main class="conversor-tempo conteudo" id="fullscreen">
       <h1 class="u-titulo-pagina">conversor de tempo</h1>
 
       <div class="conversor-tempo__inputs">
@@ -108,9 +102,14 @@
           <input class="conversor-tempo__input" type="number" name="conversor-segundos" id="conversor-segundos" min="0">
           <label class="conversor-tempo__rotulo for=" conversor-segundos">segundos</label>
         </div>
-
+        <div class="u-expandir">
+          <button id="btn-expandir" aria-label="Expandir tela">
+            <img id="icone-expandir" src="../src/img/expandir.svg" alt="">
+          </button>
+        </div>
     </main>
   </div>
+  <script type="module" src="../src/js/script.js"></script>
 </body>
 
 </html>

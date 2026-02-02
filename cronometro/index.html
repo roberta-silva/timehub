@@ -38,12 +38,6 @@
           </li>
 
           <li class="header__acao">
-            <button class="header__btn" id="btn-expandir" aria-label="Expandir tela">
-              <img src="../src/img/expandir.svg" alt="">
-            </button>
-          </li class="header__acao">
-
-          <li class="header__acao">
             <button class="header__btn" id="btn-tema" aria-label="Alterar tema">
               <img src="../src/img/theme.svg" alt="">
             </button>
@@ -69,7 +63,7 @@
       </ul>
     </nav>
 
-    <main class="conteudo">
+    <main class="conteudo" id="fullscreen">
       <h1 class="cronometro u-titulo-pagina">cronômetro</h1>
       <output class="cronometro__tempo">00:00:00</output>
       <div class="cronometro__opcoes">
@@ -77,8 +71,19 @@
         <button type="button">parar</button>
         <button type="button">reiniciar</button>
       </div>
+      <div class="u-expandir">
+        <button id="btn-expandir" aria-label="Expandir tela">
+          <img id="icone-expandir" src="../src/img/expandir.svg" alt="">
+        </button>
+      </div>
+      <div class="u-expandir">
+        <button id="btn-expandir" aria-label="Expandir tela">
+          <img id="icone-expandir" src="../src/img/expandir.svg" alt="">
+        </button>
+      </div>
     </main>
   </div>
+  <script type="module" src="../src/js/script.js"></script>
 </body>
 
 </html>
