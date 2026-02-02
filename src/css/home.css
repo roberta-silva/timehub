@@ -1,142 +1,111 @@
-.header__img {
-  width: 300px;
+.header-home,
+.container-home,
+.footer-home {
+  max-width: 1400px;
+  margin: 0 auto;
 }
-.ferramenta__titulo {
-  font-size: var(--fonte-md);
-  margin-bottom: 4px;
+.header-home,
+.container-home {
+  padding: 20px 40px 0px 40px;
 }
-.ferramenta {
-  flex: 1 1 calc(33.333% - 27px);
-  min-width: 270px;
-}
-.home__input {
-  background: var(--cor-superficie-secundaria);
-  border: none;
-  border-radius: 8px;
-  padding: 4px 8px;
-  color: var(--cor-texto-suave);
-}
-.home__label {
-  font-family: var(--fonte-primaria);
-  font-size: var(--fonte-md);
-  color: var(--cor-texto-secundario);
-}
-.home__bloco {
+.container-home {
   display: flex;
-  flex-direction: column;
-  background: var(--cor-superficie-primaria);
-  border-radius: 8px;
-  padding: 20px;
-  min-height: 290px;
-  border: 2px solid transparent;
-  position: relative;
+  flex-wrap: wrap;
+  gap: 40px;
 }
-.home__bloco:hover {
-  border: 2px solid var(--cor-borda-padrao);
+.header-home__img {
+  width: 180px;
 }
-.abrir-pagina {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  display: flex;
-  padding: 4px;
-  background: var(--cor-superficie-secundaria);
-  border-radius: 50%;
-}
-
 /* temporizador */
-.temporizador__formulario {
+.temporizador-home__formulario {
   margin-bottom: 55px;
 }
-.temporizador__tempo {
+.temporizador-home__tempo {
   align-self: center;
   font-family: var(--fonte-secundaria);
   font-size: var(--fonte-xl);
   font-weight: var(--fonte-peso-medio);
   color: var(--cor-texto-primario);
 }
-
 /* horario atual */
-.horario-atual__conteudo {
+.horario-atual-home__conteudo {
   align-items: center;
   justify-content: center;
 }
-.horario-atual__hora {
+.horario-atual-home__hora {
   font-family: var(--fonte-secundaria);
   font-size: var(--fonte-xl);
   font-weight: var(--fonte-peso-medio);
   color: var(--cor-texto-primario);
 }
-.horario-atual__local {
+.horario-atual-home__local {
   font-family: var(--fonte-primaria);
   font-size: var(--fonte-md);
   color: var(--cor-texto-secundario);
 }
-
 /* cronometro */
-.cronometro__conteudo {
+.cronometro-home__conteudo {
   align-items: center;
   justify-content: center;
 }
-.cronometro__tempo {
+.cronometro-home__tempo {
   font-family: var(--fonte-secundaria);
   font-size: var(--fonte-xl);
   font-weight: var(--fonte-peso-medio);
   color: var(--cor-texto-primario);
 }
-.cronometro__opcoes button {
+.cronometro-home__opcoes button {
   border: none;
   border-radius: 8px;
   padding: 4px 8px;
   background: #272727;
   color: var(--cor-texto-suave);
 }
-
 /* calculadora de idade */
-.calculadora-idade__input {
+.calculadora-idade-home__input {
   margin-bottom: 12px;
 }
-.calculadora-idade__texto {
+.calculadora-idade-home__texto {
   font-family: var(--fonte-primaria);
   font-size: var(--fonte-lg);
   font-weight: var(--fonte-peso-regular);
   color: var(--cor-texto-secundario);
 }
-.calculadora-idade__texto--result {
+.calculadora-idade-home__texto--result {
   font-family: var(--fonte-secundaria);
   font-size: var(--fonte-lg);
   font-weight: var(--fonte-peso-medio);
   color: var(--cor-texto-primario);
 }
-
 /* conversor de tempo */
-.conversor-tempo__opcoes {
+.conversor-tempo-home__opcoes {
   display: grid;
   grid-template-columns: 1fr auto;
   margin-bottom: 6px;
 }
-.conversor-tempo__conteudo input {
+.conversor-tempo-home__conteudo input {
   max-width: 10ch;
 }
-
 /* calculo entre datas */
-.calculo-datas__inputs {
+.calculo-datas-home__inputs {
   margin-bottom: 40px;
 }
-.calculo-datas__opcoes {
+.calculo-datas-home__opcoes {
   display: grid;
   grid-template-columns: 1fr auto;
   margin-bottom: 8px;
 }
-.calculo-datas__dias {
-  font-family: var(--fonte-primaria);
-  color: var(--cor-texto-secundario);
-  font-size: var(--fonte-lg);
-  align-self: center;
+.calculo-datas-home__resultado {
+  text-align: center;
 }
-.calculo-datas__dias-resultado {
+.calculo-datas-home__resultado-valor {
   font-family: var(--fonte-secundaria);
   font-size: var(--fonte-lg);
   font-weight: var(--fonte-peso-medio);
   color: var(--cor-texto-primario);
+}
+.calculo-datas-home__resultado-rotulo {
+  font-family: var(--fonte-primaria);
+  color: var(--cor-texto-secundario);
+  font-size: var(--fonte-lg);
 }
