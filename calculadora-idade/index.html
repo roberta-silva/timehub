@@ -38,12 +38,6 @@
           </li>
 
           <li class="header__acao">
-            <button class="header__btn" id="btn-expandir" aria-label="Expandir tela">
-              <img src="../src/img/expandir.svg" alt="">
-            </button>
-          </li class="header__acao">
-
-          <li class="header__acao">
             <button class="header__btn" id="btn-tema" aria-label="Alterar tema">
               <img src="../src/img/theme.svg" alt="">
             </button>
@@ -69,7 +63,7 @@
       </ul>
     </nav>
 
-    <main class="calculadora-idade conteudo">
+    <main class="calculadora-idade conteudo" id="fullscreen">
       <h1 class="u-titulo-pagina">calculadora de idade</h1>
 
       <div class="calculadora-idade__input">
@@ -94,9 +88,14 @@
         </span>
       </div>
 
+      <div class="u-expandir">
+        <button id="btn-expandir" aria-label="Expandir tela">
+          <img id="icone-expandir" src="../src/img/expandir.svg" alt="">
+        </button>
+      </div>
     </main>
   </div>
+  <script type="module" src="../src/js/script.js"></script>
 </body>
-
 
 </html>

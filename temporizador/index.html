@@ -38,12 +38,6 @@
           </li>
 
           <li class="header__acao">
-            <button class="header__btn" id="btn-expandir" aria-label="Expandir tela">
-              <img src="../src/img/expandir.svg" alt="">
-            </button>
-          </li class="header__acao">
-
-          <li class="header__acao">
             <button class="header__btn" id="btn-tema" aria-label="Alterar tema">
               <img src="../src/img/theme.svg" alt="">
             </button>
@@ -69,13 +63,19 @@
       </ul>
     </nav>
 
-    <main class="conteudo">
+    <main class="conteudo" id="fullscreen">
       <h1 class="temporizador__titulo u-titulo-pagina" contenteditable="true" aria-label="Editar nome do temporizador" spellcheck="false">temporizador <img src="../src/img/editar.svg" alt=""></h1>
       <output class="temporizador__output">00:00:00</output>
       <div class="temporizador__data">
         <label for="temporizador-data" class="sr-only">selecionar data final do temporizador</label>
         <input class="temporizador__input" type="datetime-local" name="temporizador-data" id="temporizador-data" aria-describedby="data-por-extenso">
         <p id="data-por-extenso" class="font-2-s"></p>
+      </div>
+
+      <div class="u-expandir">
+        <button id="btn-expandir" aria-label="Expandir tela">
+          <img id="icone-expandir" src="../src/img/expandir.svg" alt="">
+        </button>
       </div>
     </main>
 
@@ -101,6 +101,7 @@
     </dialog>
 
   </div>
+  <script type="module" src="../src/js/script.js"></script>
 </body>
 
 </html>

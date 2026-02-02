@@ -60,3 +60,16 @@
   color: var(--cor-texto-secundario);
   text-align: center;
 }
+.u-expandir {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+.u-expandir button {
+  border: none;
+  background: none;
+}
+.u-expandir button img {
+  width: 60px;
+  height: 60px;
+}

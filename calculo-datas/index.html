@@ -38,12 +38,6 @@
           </li>
 
           <li class="header__acao">
-            <button class="header__btn" id="btn-expandir" aria-label="Expandir tela">
-              <img src="../src/img/expandir.svg" alt="">
-            </button>
-          </li class="header__acao">
-
-          <li class="header__acao">
             <button class="header__btn" id="btn-tema" aria-label="Alterar tema">
               <img src="../src/img/theme.svg" alt="">
             </button>
@@ -69,7 +63,7 @@
       </ul>
     </nav>
 
-    <main class="calculo-datas conteudo">
+    <main class="calculo-datas conteudo app" id="fullscreen">
       <h1 class="u-titulo-pagina">cálculo entre datas</h1>
 
       <div class="calculo-datas__inputs">
@@ -87,8 +81,14 @@
         <output class="calculo-datas__resultado-valor">66</output>
         <span class="calculo-datas__resultado-rotulo">dias</span>
       </span>
+      <div class="u-expandir">
+        <button id="btn-expandir" aria-label="Expandir tela">
+          <img id="icone-expandir" src="../src/img/expandir.svg" alt="">
+        </button>
+      </div>
     </main>
   </div>
+  <script type="module" src="../src/js/script.js"></script>
 </body>
 
 </html>
