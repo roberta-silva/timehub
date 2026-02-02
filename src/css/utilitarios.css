@@ -51,3 +51,12 @@
   background: var(--cor-superficie-secundaria);
   border-radius: 50%;
 }
+
+/* paginas internas */
+.u-titulo-pagina {
+  font-family: var(--fonte-primaria);
+  font-size: var(--fonte-lg);
+  font-weight: var(--fonte-peso-regular);
+  color: var(--cor-texto-secundario);
+  text-align: center;
+}

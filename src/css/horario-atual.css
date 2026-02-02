@@ -1,16 +1,16 @@
-.horario-atual__titulo {
-  font-size: var(--fonte-md);
-  color: var(--cor-texto-secundario);
-  text-align: center;
+.horário-atual__info {
+  display: grid;
+  place-content: center;
 }
 .horário-atual__hora {
   font-family: var(--fonte-secundaria);
   font-size: var(--fonte-xxl);
   color: var(--cor-texto-primario);
 }
-.horario-atual__local, .horario-atual__data {
+.horario-atual__local,
+.horario-atual__data {
   font-family: var(--fonte-primaria);
-  font-size: var(--fonte-sm);
+  font-size: var(--fonte-lg);
   color: var(--cor-texto-secundario);
   text-align: center;
 }
