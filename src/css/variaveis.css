@@ -31,3 +31,18 @@
   --fonte-xxl: 6rem;
   --fonte-xxxl: 12rem;
 }
+
+body[data-tema="light"] {
+  --cor-fundo: #fff;
+  --cor-superficie-primaria: #f0f0f0;
+  --cor-superficie-secundaria: #d3d3d3;
+  --cor-borda-padrao: #c9c9c9;
+
+  /* texto */
+  --cor-texto-primario: #000;
+  --cor-texto-secundario: #b7b7b7;
+  --cor-texto-suave: #7c7c7c;
+
+  /* estados */
+  --cor-foco: #a3a3a3;
+}
