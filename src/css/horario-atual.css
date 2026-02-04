@@ -4,7 +4,7 @@
 }
 .horário-atual__hora {
   font-family: var(--fonte-secundaria);
-  font-size: var(--fonte-xxl);
+  font-size: var(--fonte-xxxl);
   color: var(--cor-texto-primario);
 }
 .horario-atual__local,

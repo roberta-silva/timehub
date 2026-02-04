@@ -23,7 +23,7 @@
 }
 .calculadora-idade__resultado-valor {
   font-family: var(--fonte-secundaria);
-  font-size: 6rem;
+  font-size: var(--fonte-xxl);
   color: var(--cor-texto-primario);
 }
 .calculadora-idade__resultado-rotulo {
