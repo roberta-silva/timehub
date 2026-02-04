@@ -11,8 +11,4 @@
 @import url("./conversor-tempo.css");
 @import url("./calculo-datas.css");
 
-main:fullscreen {
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-}
+

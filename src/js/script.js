@@ -1,4 +1,5 @@
 import FullscreenToggle from "./modules/fullscreen.js";
+import ThemeToggle from "./modules/tema.js";
 
 const fullscreen = new FullscreenToggle({
   botao: "#btn-expandir",
@@ -8,3 +9,6 @@ const fullscreen = new FullscreenToggle({
   iconeColapsar: "../src/img/colapsar.svg",
 });
 fullscreen.init();
+
+const tema = new ThemeToggle("#btn-tema", 'body');
+tema.init();

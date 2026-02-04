@@ -58,7 +58,7 @@
   border: none;
   border-radius: 8px;
   padding: 4px 8px;
-  background: #272727;
+  background: var(--cor-superficie-secundaria);
   color: var(--cor-texto-suave);
 }
 /* calculadora de idade */
