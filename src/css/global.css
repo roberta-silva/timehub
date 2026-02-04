@@ -23,10 +23,17 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+button {
+  cursor: pointer;
+}
 main {
   position: relative;
 }
-
+main:fullscreen {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
 /* paginas */
 .estrutura {
   min-height: 100vh;
