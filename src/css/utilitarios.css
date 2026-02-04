@@ -47,7 +47,7 @@
   bottom: 1rem;
   right: 1rem;
   display: flex;
-  padding: 4px;
+  padding: 8px;
   background: var(--cor-superficie-secundaria);
   border-radius: 50%;
 }
