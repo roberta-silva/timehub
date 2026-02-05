@@ -21,3 +21,8 @@
 .cronometro__opcoes button:hover {
   background: var(--cor-superficie-primaria);
 }
+@media (max-width: 700px) {
+  .cronometro__tempo {
+    font-size: var(--fonte-xxl);
+  }
+}
