@@ -38,3 +38,8 @@
   font-size: var(--fonte-xl);
   color: var(--cor-texto-secundario);
 }
+@media (max-width: 700px) {
+  .calculo-datas__inputs {
+    flex-direction: column;
+  }
+}

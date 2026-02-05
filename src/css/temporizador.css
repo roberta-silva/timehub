@@ -18,3 +18,8 @@
   border-radius: 12px;
   padding: 4px 8px;
 }
+@media (max-width: 700px) {
+  .temporizador__output {
+    font-size: var(--fonte-xxl);
+  }
+}

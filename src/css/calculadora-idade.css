@@ -31,3 +31,9 @@
   font-size: var(--fonte-xl);
   color: var(--cor-texto-secundario);
 }
+@media (max-width: 700px) {
+  .calculadora-idade__resultado {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

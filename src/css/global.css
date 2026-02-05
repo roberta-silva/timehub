@@ -115,3 +115,27 @@ main:fullscreen {
   align-items: center;
   gap: 4px;
 }
+
+@media (max-width: 700px) {
+  .estrutura {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 60px auto;
+    grid-template-areas:
+      "header header"
+      "sidenav conteudo";
+  }
+  .sidenav__lista {
+    gap: 12px;
+  }
+  .sidenav__item {
+    margin: 0px 8px;
+  }
+  .sidenav__item a {
+    background: var(--cor-fundo);
+    border-radius: 20px;
+    padding: 12px 0px;
+    width: 90px;
+    height: 90px;
+  }
+}

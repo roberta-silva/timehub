@@ -1,8 +1,7 @@
-
 .conversor-tempo__inputs {
-display: grid;
-gap: 12px;
-margin-top: 40px;
+  display: grid;
+  gap: 12px;
+  margin-top: 40px;
 }
 
 .conversor-tempo__input {
@@ -16,9 +15,19 @@ margin-top: 40px;
   background: none;
   color: var(--cor-texto-primario);
 }
-
 .conversor-tempo__rotulo {
   font-family: var(--fonte-primaria);
   font-size: var(--fonte-xl);
   color: var(--cor-texto-secundario);
+}
+@media (max-width: 700px) {
+  .conversor-tempo__inputs {
+    margin-top: 12px;
+  }
+  .conversor-tempo__rotulo {
+    font-size: var(--fonte-lg);
+  }
+  .conversor-tempo__input {
+    font-size: var(--fonte-lg);
+  }
 }

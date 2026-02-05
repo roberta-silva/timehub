@@ -14,3 +14,9 @@
   color: var(--cor-texto-secundario);
   text-align: center;
 }
+@media (max-width: 700px) {
+  .horário-atual__hora {
+    font-size: var(--fonte-xxl);
+    text-align: center;
+  }
+}

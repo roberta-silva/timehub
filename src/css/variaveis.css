@@ -46,3 +46,35 @@ body[data-tema="light"] {
   /* estados */
   --cor-foco: #a3a3a3;
 }
+
+/* Tablets */
+@media (max-width: 1000px) {
+  :root {
+    --fonte-sm: 0.75rem;
+    --fonte-lg: 1.5rem;
+    --fonte-xl: 2.5rem;
+    --fonte-xxl: 4rem;
+    --fonte-xxxl: 8rem;
+  }
+}
+
+/* Smartphones */
+/* @media (max-width: 700px) {
+  :root {
+    --fonte-sm: 0.75rem;
+    --fonte-lg: 1.2rem;
+    --fonte-xl: 2rem;
+    --fonte-xxl: 3rem;
+    --fonte-xxxl: 6rem;
+  }
+} */
+
+/* Telas muito pequenas */
+/* @media (max-width: 480px) {
+  :root {
+    --fonte-lg: 1rem;
+    --fonte-xl: 1.5rem;
+    --fonte-xxl: 2.5rem;
+    --fonte-xxxl: 4rem;
+  }
+} */
