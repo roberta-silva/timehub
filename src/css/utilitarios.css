@@ -30,6 +30,9 @@
   color: var(--cor-texto-primario);
   margin-bottom: 4px;
 }
+.u-ferramenta-titulo a {
+  color: var(--cor-texto-primario);
+}
 .u-input {
   background: var(--cor-superficie-secundaria);
   border: none;
