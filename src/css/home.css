@@ -13,6 +13,11 @@
   flex-wrap: wrap;
   gap: 40px;
 }
+.header-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .header-home__img {
   width: 180px;
 }
