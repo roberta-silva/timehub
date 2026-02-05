@@ -13,6 +13,9 @@ body {
   background: var(--cor-fundo);
   height: 100vh;
 }
+main {
+  background: var(--cor-fundo);
+}
 input:focus,
 button:focus {
   outline: 2px solid var(--cor-foco);
