@@ -30,3 +30,6 @@ TimeHub é uma aplicação web em desenvolvimento que reúne diversas ferramenta
 - JavaScript (ES6+)  
 
 
+## 👀 Preview
+<img src="./preview.png" alt="Preview do projeto Animais Fantásticos" width="600">
+
